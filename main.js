@@ -9,7 +9,7 @@ form.addEventListener('submit', (e) => {
     const userName = form.name.value.trim()
     const userEmail = form.email.value.trim()
 
-    fetch('http://localhost:3000/users/', {
+    fetch(apiURL, {
         method: 'POST',
         headers: { 
             "Authorization": token,
