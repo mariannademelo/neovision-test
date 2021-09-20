@@ -9,4 +9,7 @@ visualização da página através da plataforma Netlify.
 
 ## Como rodar na sua máquina:
 É simples!
-Faça um `fork`
+
+1. Faça um `fork` desse repositório 
+2. Criar um clone do repositório criado no seu github e dentro do diretório 
+rode o comando `git clone <link do repositório>`
