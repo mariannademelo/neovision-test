@@ -1,0 +1,121 @@
+.about {
+    height: auto;
+    padding: 90px;
+
+    @media screen and (max-width: $small) {
+        padding: 33px;
+    }
+    
+    @media screen and (max-width: $smaller) {
+        padding: 56px;
+    }
+
+    &__ctn {
+        height: auto;
+        @include center(space-between, flex-start);
+        flex-direction: column;
+    }
+
+    &__content {
+        position: relative;
+        height: 328px;
+        width: 695px;
+        @include center(space-between, flex-start);
+        flex-direction: column;
+
+        @media screen and (max-width: $medium) {
+            width: 612px;
+        }
+        @media screen and (max-width: $medium-small) {
+            width: 360px;
+            height: 484px;
+        }
+
+        @media screen and (max-width: $small) {
+            width: 333px;
+            height: 501px;
+        }
+
+        @media screen and (max-width: $smaller) {
+            width: 268px;
+            height: 577px;
+        }
+
+        h3 {
+            font-size: 50px;
+            color: $secondary-color;
+            margin-bottom: 21px;
+        }
+
+        p {
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 25px;
+        }
+    }
+
+    &__functionalities {
+        position: relative;
+        width: 695px;
+        height: 515px;
+        @include center(flex-start, flex-end);
+
+        @media screen and (max-width: $medium) {
+            width: 612px;
+        }
+        
+        @media screen and (max-width: $medium-small) {
+            width: 360px;
+        }
+        
+        @media screen and (max-width: $small) {
+            width: 330px;
+            height: 449px;
+        }
+
+        ul{
+            height: 260px;
+            width: 380px;
+            @include center(space-between, flex-start);
+            flex-direction: column;
+
+            @media screen and (max-width: $small) {
+                width: 331px;
+                height: 260px;
+            }
+            
+            @media screen and (max-width: $small) {
+                width: 261px;
+            }
+        }
+
+        li{
+            font-size: 35px;
+            width: inherit;
+            letter-spacing: -0.5pxs;
+            @include center(space-between, center);
+            
+            @media screen and (max-width: $small) {
+                font-size: 31px;
+            }
+            
+            @media screen and (max-width: $small) {
+                font-size: 25px;
+            }
+        }
+
+        .fa-check-circle {
+            color: $secondary-color;
+            font-size: 65px;
+
+            @media screen and (max-width: $small) {
+                font-size: 58px;
+            }
+            
+            @media screen and (max-width: $small) {
+                font-size: 47px;
+            }
+        }
+    }
+}

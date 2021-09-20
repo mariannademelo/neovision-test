@@ -1,0 +1,235 @@
+.landing {
+    height: auto;
+
+    &__ctn {
+        height: auto;
+        background: linear-gradient(
+            to top,
+            rgba($dark-purple, 1),
+            rgba($primary-color, 1)
+        );
+        @include center(space-between, stretch);
+        flex-direction: column;
+
+        header {
+            padding: $side-padding;
+
+            @media screen and (max-width: $medium-small) {
+                padding: 0 28px;
+            }
+
+            @media screen and (max-width: $small) {
+                padding: 0 35px;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        @include center(space-between, center)
+    }
+
+    &__logo {
+        background-color: rgba($primary-color, 0.9);
+        height: 170px;
+        width: 280px;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.06);
+        @include center(center, center);
+
+        @media screen and (max-width: $medium) {
+            height: 136px;
+            width: 220px;
+        }
+        
+        @media screen and (max-width: $medium-small) {
+            height: 89px;
+            width: 130px;
+        }
+
+        @media screen and (max-width: $small) {
+            width: 152px;
+        }
+
+        img {
+            width: 200px;
+            cursor: pointer;
+
+            @media screen and (max-width: $medium) {
+                width: 166px;
+            }
+            
+            @media screen and (max-width: $medium-small) {
+                width: 98px;
+            }
+
+            @media screen and (max-width: $small) {
+                width: 116px;
+            }
+        }
+    }
+
+    &__menu {
+        @include center(space-between, center);
+        width: 400px;
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 19px;
+
+        @media screen and (max-width: $medium-small) {
+            font-size: 15px;
+            width: 263px;
+        }
+
+        @media screen and (max-width: $small) {
+            width: 224px;
+            font-size: 16px;
+            @include center(flex-end, flex-end);
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        cursor: pointer;
+        @include transition;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    
+        .fab {
+            font-size: 40px;
+            color: $secondary-color;
+            @include transition;
+
+            @media screen and (max-width: $medium-small) {
+                font-size: 20px;
+            }
+
+            @media screen and (max-width: $small) {
+                font-size: 25px;
+            }
+    
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    &__content {
+        width: 100%;
+        display: flex;
+        padding: 0 10px;
+        margin: 40px 0 0 0;
+
+        @media screen and (max-width: $large) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        @media screen and (max-width: $small) {
+            width: 96%;
+        }
+    }
+
+    &__design {
+        height: 94vh;
+        position: relative;
+
+        @media screen and (max-width: $large) {
+            height: 122vh;
+        }
+        
+        @media screen and (max-width: $medium-large) {
+            height: 45vh;
+        }
+
+        @media screen and (max-width: $small) {
+            height: 42vh;
+        }
+
+        img {
+            height: inherit;
+            position: absolute;
+            left: 0;
+
+            @media screen and (max-width: $large) {
+                position: relative;
+            }
+        }
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 35px;
+        display: flex;
+        align-items: center;
+        height: 78vh;
+        position: relative;
+        left: 51%;
+        width: 599px;
+        font-weight: 300;
+        line-height: 60px;
+
+        @media screen and (max-width: $large) {
+            left: 0;
+            font-size: 63px;
+            width: 964px;
+            line-height: 95px;
+            height: 57vh;
+        }
+
+        @media screen and (max-width: $medium-large) {
+            font-size: 49px;
+            width: 749px;
+            line-height: 81px;
+            height: 23vh;
+        }
+        
+        @media screen and (max-width: $medium) {
+            font-size: 44px;
+            width: 666px;
+        }
+        
+        @media screen and (max-width: $medium-small) {
+            font-size: 32px;
+            width: 487px;
+            line-height: 55px;
+        }
+
+        @media screen and (max-width: $small) {
+            font-size: 31px;
+            width: 258px;
+            line-height: 35px;
+            height: 275px;
+        }
+
+        span {
+            font-size: 59px;
+            font-weight: 700;
+            letter-spacing: -1px;
+
+            @media screen and (max-width: $large) {
+                font-size: 94px;
+            }
+
+            @media screen and (max-width: $medium-large) {
+                font-size: 74px;
+            }
+
+            @media screen and (max-width: $medium) {
+                font-size: 66px;
+            }
+            
+            @media screen and (max-width: $medium-small) {
+                font-size: 48px;
+            }
+            
+            @media screen and (max-width: $small) {
+                font-size: 46px;
+                line-height: 58px;
+            }
+        }
+    }
+}

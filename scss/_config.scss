@@ -1,0 +1,33 @@
+$primary-color: #610c80;
+$secondary-color: #ff8000;
+$dark-purple: #2c0055;
+$side-padding: 0 60px;
+$large: 1220px;
+$medium-large: 1024px;
+$medium: 768px;
+$medium-small: 540px;
+$small: 415px;
+$smaller: 375px;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+@mixin center($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin box($width) {
+
+}
+
+@mixin transition {
+    transition: all .3s ease-in;
+}
